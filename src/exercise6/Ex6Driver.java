@@ -2,7 +2,7 @@ package exercise6;
 
 /**
  * Exercise 6
- * @author yasiro01
+ * @author Teboho Samuel Nteso
  */
 public class Ex6Driver {
   public static void main(String[] args) {
