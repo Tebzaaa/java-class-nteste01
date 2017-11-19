@@ -3,12 +3,17 @@ package exercise8;
 /**
  * Class PhysicalMovie
  * MediaLIbrary code 1
- * @author yasiro01
+ * @author Teboho Samuel Nteso
  */
 public class PhysicalMovie extends Movie {
   private final String medium;
   private String location;
-
+  
+  public PhysicalMovie(String medium, String location, String director, int releaseYear, long id, String title, int quantity){
+      super(director,releaseYear,id,title,quantity);
+      this.medium = medium;
+      this.location = location;
+  }
   /**
    * Get the value of medium
    * @return the value of medium
@@ -16,7 +21,6 @@ public class PhysicalMovie extends Movie {
   public String getMedium() {
     return medium;
   }
-  
   /**
    * Get the value of location
    * @return the value of location
@@ -38,7 +42,10 @@ public class PhysicalMovie extends Movie {
    * @param newLocation 
    */
   public void move(String newLocation) {
-    throw new UnsupportedOperationException();
+    location = newLocation;
+  }
+  public String getInfo(){
+      return (title+'('+releaseYear+')'+"by"+director+"is located at"+location);
   }
 
 }

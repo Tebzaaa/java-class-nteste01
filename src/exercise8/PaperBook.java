@@ -3,14 +3,20 @@ package exercise8;
 /**
  * Class PaperBook
  * MediaLIbrary code 3
- * @author yasiro01
+ * @author Teboho Samuel Nteso
  */
 public class PaperBook extends Book {
   private final int pages;
   private String location;
+  
+  public PaperBook(int pages, String location, String author, int publishingYear, long id, String title, int quantity){
+      super(author, publishingYear, id, title, quantity);
+      this.pages = pages;
+      this.location = location;
+  }
 
   /**
-   * Get the number of pages
+   * Get the number of pages 
    * @return the value of pages
    */
   public int getPages() {
@@ -38,7 +44,10 @@ public class PaperBook extends Book {
    * @param newLocation 
    */
   public void move(String newLocation) {
-    throw new UnsupportedOperationException();
+    location = newLocation;
   }
   
+  public String getInfo(){
+      return (author+'('+publishingYear+')'+title+"is available for"+location);
+  }
 }

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  * Class MediaLibrary
- * @author yasiro01
+ * @author Teboho Samuel Nteso
  */
 public class MediaLibrary {
   private ArrayList<Item> myLibrary = new ArrayList();

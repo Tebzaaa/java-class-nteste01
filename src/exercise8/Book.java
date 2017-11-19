@@ -2,7 +2,7 @@ package exercise8;
 
 /**
  * Class Book
- * @author yasiro01
+ * @author Teboho Samuel Nteso
  */
 public abstract class Book extends Item {
   protected final String author;

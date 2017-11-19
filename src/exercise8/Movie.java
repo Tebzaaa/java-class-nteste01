@@ -2,7 +2,7 @@ package exercise8;
 
 /**
  * Class Movie
- * @author yasiro01
+ * @author Teboho Samuel Nteso
  */
 public abstract class Movie extends Item {
   protected final String director;
